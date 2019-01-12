@@ -1,0 +1,64 @@
+#1
+a. Making coffee
+Grab bag of coffee grinds.
+Grab a filter for the coffee maker. 
+Confirm that the coffee maker is plugged in. 
+If it is not plugged in, plug it in.
+Open the top of the coffee maker. 
+Put filter in.
+Grab something to scoop the coffee with.
+Put 3-4 scoops of coffee in the filter from step 6.
+Remove water container on coffee filter.
+Go to kitchen sink.
+Turn on water.
+Fill container from step 9 with water to desired amount.
+Put container back into coffee maker.
+Click the "Brew" button coffee maker.
+Wait ~5-6 min until done.
+Grab a mug.
+Pour coffee into mug.
+Enjoy :)
+
+
+b. Washing dishes
+Turn on kitchen sink to warm water.
+Grab dish soap and sponge.
+Squeeze soap onto sponge.
+While the sink still has dishes in it:
+	Grab a dish.
+	Put under the running water.
+	If not enough soap on sponge:
+		Add more soap to sponge.
+	While dish is still dirty:
+		Rub sponge on new spot on dish.
+	Rinse all soap off the dish with the water.
+	Put dish into drying rack.
+
+	
+c. Morning Routine
+Turn off alarm. 
+Make coffee.
+Put coffee in mug.
+Sit on the couch.
+While there is coffee in the mug:
+	Drink coffee.
+	Scroll through instagram on phone.
+Brush teeth.
+Brush hair.
+Pick clothes for the day.
+Get dressed.
+Put on makeup.
+Gather computer, chapstick, headphones, wallet, water bottle, and keys into backpack.
+Get bike.
+Leave apartment. 
+Ride bike to work. 
+
+
+#2
+Instagram's algorithm for the Explore page. I always have content I am interested in clicking on.
+Spotifiy's suggested artists page. The suggestions are usually close to what I am interested in.
+Waze's suggested routes. They are usually the quickest, though not the easiest to follow.
+
+
+#3 
+An efficient algorithm takes the simplest and shortest path to accomplish a task. For example, if you are washing your dishes, it is probably easiest to wash all the dishes and then dry all the dishes instead of washing and drying each dish before cleaning the next one. The small steps to pick up the rag to dry a dish, put the rag back, etc. will save time if only done once, not twenty times. 
