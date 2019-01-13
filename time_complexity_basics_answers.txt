@@ -1,0 +1,28 @@
+#1 What is time complexity and what is its relation to algorithms?
+Time complexity provides us with an idea of how long an algorithm will take, in relation to the size of the input. 
+
+#2 What is runtime?
+Runtime can be about the actual time duration of the algorithm. Sine runtime of the same algorithm can be different on different computers depending on the memory, the term is instead used interchangeably with time complexity.
+
+#3 How is the runtime of an algorithm calculated?
+It is measured by adding up how many steps are taken in relation to the size of the input. For example, if you loop through an array of size N to sum all the numbers, the runtime if O(N). If you do a binary search on an array of size N, the runtime is O(log N).
+
+#4 Name the six types of algorithm growth rates we saw in this checkpoint and list them in order of most efficient to least efficient. Now Google another algorithmic growth rate not covered and place it in the correct spot in your list.
+Constant
+Logarithmic
+Linear
+Log-Linear
+Quadratic
+Exponential
+Factorial Time
+
+#5 Choose one of the algorithmic growth rates from the last question and make a comparison to a real-life situation.
+Linear - Folding laundry. You have to fold each piece of clothing. There is no easy way to fold multiple items in one step.
+
+#6 O(n)
+
+#7 O(n^2)
+
+#8 O(2^n)
+
+#9 The most time efficient of the code snippets is the linear search. 
