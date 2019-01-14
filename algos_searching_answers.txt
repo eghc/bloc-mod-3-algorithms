@@ -1,0 +1,56 @@
+Short Answer
+
+#1 What is a real-life scenario that uses linear search?
+I do not organize my t-shirts by certain colors/style/etc. so I have to do a linear search through my closet to find the shirt I am looking for.
+
+
+#2 What is a real-life scenario that uses binary search?
+Binary search is used when looking for a word in a section of a dictionary. For example, you are looking for "computer", you know to start in the C section. Once you are there, it is best to perform a binary search since you know the words are in alphabetical order. 
+
+
+#3 Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using linear search?
+7
+
+
+#4 Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using binary search?
+2 
+
+
+#5 Given an unsorted collection of a million items, which algorithm would you choose between linear search and binary search? Explain your reasoning.
+Linear since that would be the only way to be 100% certain if the data you are looking for is there. The changes of a binary search working would be pretty slim.
+
+
+#6 Given a sorted collection of a million items, which algorithm would you choose between linear search and binary search? Explain your reasoning.
+Binary since it should only take 6 iterations to find the data I am looking for.
+
+
+
+Programming Assignment
+
+#1
+function findWord(dictArr, word, left, right){
+	if(right < left){
+  	return -1;
+  }
+  let mid = Math.floor((right-left)/2) + left;
+  
+  if(dictArr[mid] === word){
+  	return mid;
+  }else if(word < dictArr[mid]){
+  	searchResult =  findWord(dictArr, word, left, mid);
+    return searchResult;
+  }else{
+  	searchResult = findWord(dictArr, word, mid+1, right);
+    return searchResult;
+  }
+}
+
+#2
+function findFish(fishArr, targetFish){
+	for(let i = 0; i < fishArr.length; i++){
+  	if(fishArr[i] === targetFish){
+    	return fishArr[i];
+    }
+  }
+  return null;
+}
