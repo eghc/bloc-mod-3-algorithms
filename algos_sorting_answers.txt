@@ -1,0 +1,76 @@
+#1 Write pseudocode for bubble sort.
+FUNCTION bubbleSort(arr):
+	SET sorted to FALSE
+	WHILE sorted IS FALSE:
+		SET n = 0
+		SET sorted to TRUE
+		WHILE n < LENGTH OF arr-1:
+			IF arr[n] > arr[n+1] THEN:
+				SET temp to arr[i]
+				SET arr[i] to arr[i+1]
+				SET arr[i+1] to temp
+				SET sorted to FALSE
+			END IF
+		SET n to n + 1
+		END WHILE
+	END WHILE
+	RETURN arr
+END FUNCTION
+
+
+#2 Write pseudocode for quicksort.
+FUNCTION quickSort(arr, left, right):
+	IF left < right THEN:
+		SET pivot to arr[right]
+		SET index to left-1
+		SET i to left
+		WHILE i < right:
+			IF arr[i] <= pivot THEN:
+				SET index to index + 1
+				SET temp to arr[index]
+				SET arr[index] to arr[i]
+				SET arr[i] to temp
+			END IF
+			SET i to i + 1
+		END WHILE
+
+		SET temp to arr[index+1]
+		SET arr[index+1] to arr[right]
+		SET arr[right] to temp
+		
+		SET partition to index + 1
+		
+		quickSort(arr, left, partition-1)
+		quickSort(arr, partition+1, right);
+		
+	END IF
+	RETURN arr
+END FUNCTION
+
+#3 We talked about time complexity in a previous checkpoint, and how to get an idea of the efficiency of an algorithm. After looking at the pseudocode for the above sorting methods, identify why merge sort and quick sort are much more efficient than the others. Walking through each algorithm with a few sample collections may help. 
+
+I'm going to use quick sort (w/ the last element as a pivot) and bubble sort as an example. If you were to count steps as every comparison and swap that occurs in these sorts, the below array would take quick sort 46 steps, while bubble sort would take 121 steps.
+Example array: [70, 163, 108, 37, 130, 138, 22, 40, 42, 21]
+
+Let's break down each iteration over the array with bubble sort:
+70, 108, 37, 130, 138, 22, 40, 42, 21, 163
+70, 37, 108, 130, 22, 40, 42, 21, 138, 163
+37, 70, 108, 22, 40, 42, 21, 130, 138, 163
+37, 70, 22, 40, 42, 21, 108, 130, 138, 163
+37, 22, 40, 42, 21, 70, 108, 130, 138, 163
+22, 37, 40, 21, 42, 70, 108, 130, 138, 163
+22, 37, 21, 40, 42, 70, 108, 130, 138, 163
+22, 21, 37, 40, 42, 70, 108, 130, 138, 163
+21, 22, 37, 40, 42, 70, 108, 130, 138, 163
+
+Let's break down each iteration over the array with quick sort:
+21, 163, 108, 37, 130, 138, 22, 40, 42, 70
+21, 37, 22, 40, 42, 70, 108, 163, 130, 138
+21, 70, 37, 40, 42, 22, 108, 163, 130, 138
+21, 22, 37, 40, 42, 70, 108, 130, 138, 163
+
+In each of these iterations, many swaps and comparisons occurred, but there were less iterations over the arrays with the quick sort compared to the bubble sort. For each iteration in bubble sort, you can see that so much the array is untouched and is completely sorted. For each iteration in quick sort, the array is always split into smaller parts to be sorted.
+
+
+#4 All of the sorts addressed in this checkpoint are known as comparison sorts. Research bucket sort and explain how it works. What is the ideal input for bucket sort?
+Bucket sort puts elements into buckets, the buckets are sorted, and then the buckets are merged back into the array. Elements are put in buckets depending on what range of values they fall into. Therefore, this sort is best for a set of data where the values are almost evenly distributed. 
