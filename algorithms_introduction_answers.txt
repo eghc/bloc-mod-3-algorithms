@@ -1,58 +1,68 @@
 #1
 a. Making coffee
-Grab bag of coffee grinds.
-Grab a filter for the coffee maker. 
-Confirm that the coffee maker is plugged in. 
-If it is not plugged in, plug it in.
-Open the top of the coffee maker. 
-Put filter in.
-Grab something to scoop the coffee with.
-Put 3-4 scoops of coffee in the filter from step 6.
-Remove water container on coffee filter.
-Go to kitchen sink.
-Turn on water.
-Fill container from step 9 with water to desired amount.
-Put container back into coffee maker.
-Click the "Brew" button coffee maker.
-Wait ~5-6 min until done.
-Grab a mug.
-Pour coffee into mug.
+GET bag of coffee grinds.
+GET one filter for the coffee maker. 
+IF coffee maker is NOT on:
+	SET coffee maker to on
+SET top of coffee maker to open.
+SET filter in coffee maker.
+GET spoon.
+SET count to 0.
+WHILE count < 4:
+	GET coffee grinds with spoon.
+	SET coffee grinds in filter.
+	SET count to count + 1.
+GET water container.
+SET sink to on.	
+WHILE water in water container is LOW:
+	ADD water to water container.
+SET water container in coffee maker.
+SET coffee maker to "Brew"
+WHILE coffee maker is "Brewing":
+	WAIT
+GET a mug.
+GET coffee pot.
+WHILE mug is NOT full:
+	SET coffee from coffee pot into mug.
 Enjoy :)
 
 
 b. Washing dishes
-Turn on kitchen sink to warm water.
-Grab dish soap and sponge.
-Squeeze soap onto sponge.
-While the sink still has dishes in it:
-	Grab a dish.
-	Put under the running water.
-	If not enough soap on sponge:
-		Add more soap to sponge.
-	While dish is still dirty:
+SET sink to on.
+SET water on sink to hot.
+GET dish soap.
+GET sponge.
+ADD dish soap to sponge.
+
+WHILE sink is NOT empty:
+	GET a dish from sink.
+	SET dish under the running water.
+	IF not enough dish soap on sponge:
+		ADD more dish soap to sponge.
+	WHILE dish is still dirty:
 		Rub sponge on new spot on dish.
-	Rinse all soap off the dish with the water.
-	Put dish into drying rack.
+	SET dish under the running water.
+	SET dish in drying rack.
 
 	
-c. Morning Routine
-Turn off alarm. 
-Make coffee.
-Put coffee in mug.
-Sit on the couch.
-While there is coffee in the mug:
-	Drink coffee.
-	Scroll through instagram on phone.
-Brush teeth.
-Brush hair.
-Pick clothes for the day.
-Get dressed.
-Put on makeup.
-Gather computer, chapstick, headphones, wallet, water bottle, and keys into backpack.
-Get bike.
-Leave apartment. 
-Ride bike to work. 
+c. Reading a book
+GET book.
+IF you have not read this book:
+	OPEN book to page one.
+	SET current page to one.
+ELSE:
+	OPEN book to last page you read.
+	SET current page to last page you read.
 
+WHILE current page exists OR you get tired:
+	SET line to first sentence on the page.
+	WHILE line exists:
+		READ line.
+		SET line to next sentence on the page.
+	
+	IF next page is on back of current page:
+		TURN current page.
+	SET current page to next page.
 
 #2
 Instagram's algorithm for the Explore page. I always have content I am interested in clicking on.
